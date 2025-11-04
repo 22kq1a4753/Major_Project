@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  width: 200px;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  text-align: center;
+}
+
+.box img {
+  width: 150px;
+  height: auto;
+}
+
+.box h3 {
+  margin-top: 10px;
+}
+
+.box .price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.box button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+<h2>Our Products</h2>
+
+<div class="box">
+  <img src="JamunChipsFrontImage_large.jpg" alt="Basil">
+  <h3>Italian Basil (Hyd...</h3>
+  <p class="price">55.00</p>
+  <button>SOLD OUT</button>
+</div>
+
+<div class="box">
+  <img src="Pears_cf9ac9a1-6cd6-42e3-8de5-b6de09829d6d_large.jpg">
+  <h3>Red Lollo Rosso...</h3>
+  <p class="price">80.00</p>
+  <button>SOLD OUT</button>
+</div>
+
+<div class="box">
+  <img src="Sweet-Lemon_large.jpg" alt="Red Cabbage">
+  <h3>Red Cabbage (H...</h3>
+  <p class="price">95.00</p>
+  <button>SOLD OUT</button>
+</div>
+
+<div class="box">
+  <img src="banana-powder_large_f0d6750f-b412-4815-b1e1-7779bf18c354_large.jpg" alt="Butter Head Lettuce">
+  <h3>Butter Head Lett...</h3>
+  <p class="price">70.00</p>
+  <button>SOLD OUT</button>
+</div>
+
+<div class="box">
+  <img src="sdfghj.jpg" alt="Yellow Bell Pepper">
+  <h3>Yellow Bell Pepp...</h3>
+  <p class="price">79.00</p>
+  <button>SOLD OUT</button>
+</div>
+
+<div class="box">
+  <img src="ImportedPremiumApple-RoyalGala_large.jpg" alt="Red Bell Pepper">
+  <h3>Red Bell Pepper...</h3>
+  <p class="price">79.00</p>
+  <button>SOLD OUT</button>
+</div>
+<div class="box">
+    <img src="ImportedKiwi_large.jpg" alt="Red Bell Pepper">
+    <h3>Red Bell Pepper...</h3>
+    <p class="price">79.00</p>
+    <button>SOLD OUT</button>
+  </div>
+  <div class="box">
+    <img src="Organic_Guava_large_92938d21-05e5-4146-9bb4-c23e6dc55f0b_large.jpg" alt="Red Bell Pepper">
+    <h3>Red Bell Pepper...</h3>
+    <p class="price">79.00</p>
+    <button>SOLD OUT</button>
+  </div>
+  <div class="box">
+    <img src="Organic_Strawberry_Punnet_large.jpg" alt="Red Bell Pepper">
+    <h3>Red Bell Pepper...</h3>
+    <p class="price">79.00</p>
+    <button>SOLD OUT</button>
+  </div>
+  <div class="box">
+    <img src="Organic_Sapota_Chiku_large.jpg" alt="veg">
+    <p class="price">79.00</p>
+    <button>SOLD OUT</button>
+  </div>
+  <div class="box">
+    <img src="nnnnnnnnnnnn_large.jpg" alt="Red Bell Pepper">
+    <h3>Red Bell Pepper...</h3>
+    <p class="price">79.00</p>
+    <button>SOLD OUT</button>
+  </div>
+</body>
+</html>
