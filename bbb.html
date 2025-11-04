@@ -1,0 +1,59 @@
+<!-- HTML remains the same -->
+
+<script>
+  let cart = [];
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+    addToCartButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        const productId = button.getAttribute("data-product-id");
+        const productName = button.parentNode.querySelector("h2").textContent;
+        const productPrice = getProductPrice(productId);
+        addProductToCart(productId, productName, productPrice);
+        updateCartTotal();
+        displayCartItems();
+      });
+    });
+  });
+
+  function getProductPrice(productId) {
+    // Replace with your own logic to retrieve product prices
+    switch (productId) {
+      case "1":
+        return 10.99;
+      case "2":
+        return 9.99;
+      case "3":
+        return 12.99;
+      default:
+        return 0;
+    }
+  }
+
+  function addProductToCart(productId, productName, productPrice) {
+    const existingProduct = cart.find(function(product) {
+      return product.id === productId;
+    });
+    if (existingProduct) {
+      existingProduct.quantity++;
+    } else {
+      cart.push({ id: productId, name: productName, quantity: 1, price: productPrice });
+    }
+  }
+
+  function updateCartTotal() {
+    let total = 0;
+    cart.forEach(function(product) {
+      total += product.price * product.quantity;
+    });
+    document.getElementById("cart-total").innerText = `Total: $${total.toFixed(2)}`;
+  }
+
+  function displayCartItems() {
+    const cartItemsHtml = cart.map(function(product) {
+      return `<li>${product.name} x ${product.quantity} = $${(product.price * product.quantity).toFixed(2)}</li>`;
+    });
+    document.getElementById("cart-items").innerHTML = cartItemsHtml.join("");
+  }
+</script>
