@@ -1,0 +1,27 @@
+<html>
+    <head>
+    <title>userloginpage</title>
+    <SCRIPT LANGUAGE="javascript"> function usermeth()
+    {
+    var user=document.Login_Page.usr.value; 
+    var pass=document.Login_Page.pswd.value;
+    if(user.length==0) { alert("Please Enter the username"); 
+    document.Login_Page.usr.focus(); return false;
+    }
+    if(pass.length==0){ alert("Please Enter the password");
+    document.Login_Page.pswd.focus(); return false;
+    } return true;
+    }
+    </script></head><body> 
+    <form name="Login_Page" method="Post" action="loginjsp.jsp"
+    onsubmit="javascript: return usermeth()">
+    <center><font color='green' size=4>Login your Authentication:</font><br><br>
+    Enter UserName<input type="text" name="usr"> 
+    <br>
+    Enter PassWord<input type="password" name="pswd"><br>
+    <input type="submit" value="`````Submit`````">
+    </center>
+    </form>
+    </body>
+    </html>
+
